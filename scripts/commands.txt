@@ -9,3 +9,10 @@ docker push yakovthedocker/data_loader
 oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\data_loader-deployment.yaml
 oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\data_loader-service.yaml
 oc expose service/data-loader
+oc rsh mysql-564546bcf-89fh4
+mysql -u root -p
+use testdb
+CREATE TABLE data(ID INT PRIMARY KEY AUTO_INCREMENT,first_name VARCHAR(100),last_name VARCHAR(100));
+INSERT INTO data (first_name,last_name) VALUES ('shneor', 'zirkus');
+INSERT INTO data (first_name,last_name) VALUES ('david', 'teichman');
+INSERT INTO data (first_name,last_name) VALUES ('yakov','matan');
