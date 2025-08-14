@@ -1,0 +1,3 @@
+# created by virtualenv automatically
+.venv
+infrastructure/my-sql-secret.yaml
