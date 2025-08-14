@@ -1,2 +1,4 @@
 oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\my-sql-deployment.yaml
 oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\my-sql-service.yaml
+oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\my-sql-secret.yaml
+oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\my-sql-pvc.yaml
