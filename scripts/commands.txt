@@ -6,3 +6,6 @@ docker build -t data_loader .
 docker login
 docker tag data_loader yakovthedocker/data_loader:latest
 docker push yakovthedocker/data_loader
+oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\data_loader-deployment.yaml
+oc apply -f C:\Users\User\PycharmProjects\I\Data-loader\infrastructure\data_loader-service.yaml
+oc expose service/data-loader
